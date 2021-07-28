@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milele FM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/jquery.bbslider.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <img src="img/Logo.png" alt="">
+                <div class="radio">
+                    <p>Listen</p>
+                    <audio src=”https://fluoz.zeno.fm:80/ur6rs3kqtceuv/source” preload=”metadata” loop></audio>
+                    <button id="play-icon"></button>
+                </div>
+            </div>
+        </div>
+        <div class="space">
+
+        </div>
+        <div class="slider">
+            <div class="slider-header">
+                <p>Milele Shows</p>
+                <hr>
+            </div>
+            <div class="slider-body">
+                <div class="shows">
+                    <img src="./img/Evamwalili.png">
+                </div>
+                <div class="shows">
+                    <img src="./img/Deenaotoyo.png" alt="">
+                </div>
+                <div class="shows">
+                    <img src="./img/Bangaiza.png" alt="">
+                </div>
+                <div class="shows">
+                    <img src="./img/alex awilo.png" alt="">
+                </div>
+                <div class="shows">
+                    <img src="./img/mercymbone.png" alt="">
+                </div>
+                <div class="shows">
+                    <img src="./img/pepeta iwake.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="col">
+                <div class="heading">
+                    <p>Stay connected</p></div>
+                <hr>
+                <div class="col-content">
+                    <p>Subscribe to our social media channels, facebook, twitter and instagram to be able to receive weekly updates.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="heading">
+                    <p>Contacts</p></div>
+                <hr>
+                <div class="col-content">
+                    <p><a href="https://www.milelefm.co.ke">https://milelefm.co.ke</a></p>
+                    <p>Email address: <a href="mailto:info@milelefm.co.ke">info@milelefm.co.ke</a></p>
+                    <br>
+                    <p>DSM Place, Kijabe Street, Nairobi, Kenya</p>
+                    <p>P.O Box 103618-00101, Nairobi, Kenya</p>
+                    <p>Safaricom: +254 709 824 100</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="heading">
+                    <p>About</p></div>
+                <hr>
+                <div class="col-content">
+                    <p>This is a Kenyan Rhumba station. Radio Milele is located in Nairobi and started broadcasting in 2008. Its schedule mixes entertainment and information and some of its most popular programs are Milele Breakfast, Milele Drive and Baraka za Milele.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="heading">
+                    <p>Social Media</p>
+                </div>
+                <hr>
+                <div class="col-content">
+                    <ul>
+                        <li><i data-feather="facebook"></i>  <a href="https://facebook.com/milele_fm" target="_blank">milele_fm</a></li>
+                        <li><i data-feather="instagram"></i>  <a href="https://instagram.com/milele_fm" target="_blank">milele_fm</a></li>
+                        <li><i data-feather="twitter"></i>  <a href="https://twitter.com/milele_fm" target="_blank">milele_fm</a></li>
+                        <li><i data-feather="youtube"></i>  <a href="https://youtube.com/milele_fm" target="_blank">milele_fm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.2.1.min.js" ></script>
+<script src="./js/jquery.bbslider.min.js"></script>
+<script>
+    feather.replace();
+</script>
+<script>
+    $('.slider-body').bbslider({
+        controls:     false,
+        transition:   'none',
+        carousel:     4,
+        carouselMove: 2,
+        auto: true,
+        /*controlsText:[
+            '<a class="prev control fa fa-angle-left" href="#"></a>',
+            '<a class="next control fa fa-angle-right" href="#"></a>'],*/
+        
+        });
+</script>
+<script src="js/main.js"></script>
+</html>
