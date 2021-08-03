@@ -56,6 +56,9 @@ body{
     background-image: linear-gradient(to right,#fbb201,#fcd602, #fbb201);
     min-height: 30vh;
 }
+.slider-mobile{
+    display: none;
+}
 /* Slider header dimensions defined  */
 .slider-header{
     display: block;
@@ -145,13 +148,14 @@ body{
 /* media queries */
 /* this section will have the media queries for mobile devices */
 @media only screen and (max-width: 600px) {
+    /* footer details */
     .footer{
         display: grid;
         grid-template-columns: repeat(1,80%);
         justify-content: center;
         min-height: 20vh;
         background-color: #000;
-        width: 70%;
+        width: 90%;
         /* margin: 0 auto; */
     }
     .col{
@@ -163,4 +167,31 @@ body{
     .col:last-child{
         margin-right: 10px;
     }
+    .col-content ul{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        align-items: center;
+    }
+    /* slider adjustments for mobile devices*/
+    .slider{
+        display: none;
+    }
+    .slider-header p{
+        min-width: 100%;
+        text-align: center;
+    }
+    .slider-mobile{
+        background-image: linear-gradient(to right,#fbb201,#fcd602, #fbb201);
+        display: grid;
+        justify-content: center;
+        min-height: 30vh;
+        /* margin: 0 auto; */
+    }
+    .slider-mobile-body > .shows img{
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
+
+@media only screen and (max-width: 800px)
