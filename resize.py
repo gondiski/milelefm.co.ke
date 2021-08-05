@@ -12,6 +12,6 @@ def resize():
 			# imResize = im.resize((200,200), Image.ANTIALIAS)
 			# imFinal = imResize.convert('RGB')
 			imFinal = im.convert('RGB')
-			imFinal.save(f + '_resized.jpg', 'JPEG', quality=90, dpi=(150,150))
+			imFinal.save(f + '_resized.jpg', 'JPEG', quality=90, dpi=(100,100))
 
 resize()
