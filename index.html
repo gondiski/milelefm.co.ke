@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milele FM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelementplayer.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/jquery.bbslider.css">
@@ -12,19 +13,22 @@
 </head>
 <body>
     <div class="container">
+        <!-- header  -->
         <div class="header">
             <div class="nav">
+                <!-- logo  -->
                 <img src="img/Logo.png" alt="">
+                <!-- radio  -->
                 <div class="radio">
-                    <p>Listen</p>
-                    <audio src=”https://fluoz.zeno.fm:80/ur6rs3kqtceuv/source” preload=”metadata” loop></audio>
-                    <button id="play-icon"></button>
+                    <!-- <iframe src="https://tunein.com/embed/player/s228508/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe> -->
                 </div>
             </div>
         </div>
+        <!-- free space with the city background -->
         <div class="space">
 
         </div>
+        <!-- slider -->
         <div class="slider">
             <div class="slider-header">
                 <p>Milele Shows</p>
@@ -51,6 +55,7 @@
                 </div>
             </div>
         </div>
+        <!-- mobile slider  -->
         <div class="slider-mobile">
             <div class="slider-header">
                 <p>Milele Shows</p>
@@ -77,6 +82,7 @@
                 </div>
             </div>
         </div>
+        <!-- footer section   -->
         <div class="footer">
             <div class="col">
                 <div class="heading">
@@ -129,6 +135,7 @@
 <script>
     feather.replace();
 </script>
+<!-- slider initialization  -->
 <script>
     $('.slider-body').bbslider({
         controls:     false,
@@ -142,12 +149,13 @@
         
         });
 </script>
+<!-- mobile slider initialization  -->
 <script>
     $('.slider-mobile-body').bbslider({
         controls:     false,
         transition:   'none',
         carousel:     1,
-        carouselMove: 1,
+        carouselMove: 2,
         auto: true,
         /*controlsText:[
             '<a class="prev control fa fa-angle-left" href="#"></a>',
@@ -156,4 +164,6 @@
         });
 </script>
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js"></script>
 </html>
