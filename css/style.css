@@ -116,7 +116,7 @@ img{
 .slider-body{
     width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin:0 auto;
 }
 /* image adjustment for posters in slider  */
