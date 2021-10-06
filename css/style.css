@@ -37,6 +37,7 @@ body{
 .nav > img{
     width: 10%;
     height: 10%;
+    /* box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5; */
 }
 /* Positioning the radio  */
 .radio{
@@ -94,6 +95,7 @@ body{
 /* image adjustment for posters in slider  */
 .slider-body > .shows img{
     max-width: 70%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
 }
 /* Footer content styling  */
 .footer{
